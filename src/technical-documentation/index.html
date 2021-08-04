@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FCC Docs</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>PHP Variables</header>
+      <ul>
+        <li><a href="#Basics" class="nav-link">Basics</a></li>
+        <li>
+          <a href="#Predefined_Variables" class="nav-link"
+            >Predefined Variables</a
+          >
+        </li>
+        <li><a href="#Variable_Scope" class="nav-link">Variable Scope</a></li>
+        <li>
+          <a href="#Variable_Variables" class="nav-link">Variable Variables</a>
+        </li>
+        <li>
+          <a href="#Variable_From_External_Sources" class="nav-link"
+            >Variable From External Sources</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <main id="main-doc">
+      <section class="main-section" id="Basics">
+        <header>Basics</header>
+        <article>
+          <p>
+            Variables in PHP are represented by a dollar sign followed by the
+            name of the variable. The variable name is case-sensitive.
+          </p>
+          <code>&lt;?php $Var = 'Bob';</code>
+          <p>
+            Variable names follow the same rules as other labels in PHP. A valid
+            variable name starts with a letter or underscore, followed by any
+            number of letters, numbers, or underscores. As a regular expression,
+            it would be expressed thus:
+            ^[a-zA-Z_\x80-\xff][a-zA-Z0-9_\x80-\xff]*$
+          </p>
+          <code>&lt;?php $var = 'Bob';</code>
+        </article>
+      </section>
+
+      <section class="main-section" id="Predefined_Variables">
+        <header>Predefined Variables</header>
+        <article>
+          <p>
+            PHP provides a large number of predefined variables to any script
+            which it runs. Many of these variables, however, cannot be fully
+            documented as they are dependent upon which server is running, the
+            version and setup of the server, and other factors. Some of these
+            variables will not be available when PHP is run on the command line.
+            Refer to the list of predefined variables for details.
+          </p>
+          <p>
+            PHP also provides an additional set of predefined arrays containing
+            variables from the web server (if applicable), the environment, and
+            user input. These arrays are rather special in that they are
+            automatically global - i.e., automatically available in every scope.
+            For this reason, they are often known as "superglobals". (There is
+            no mechanism in PHP for user-defined superglobals.) Refer to the
+            list of superglobals for details.
+          </p>
+          <p>
+            If certain variables in variables_order are not set, their
+            appropriate PHP predefined arrays are also left empty.
+          </p>
+        </article>
+      </section>
+
+      <section class="main-section" id="Variable_Scope">
+        <header>Variable Scope</header>
+        <article>
+          <p>
+            The scope of a variable is the context within which it is defined.
+            For the most part all PHP variables only have a single scope. This
+            single scope spans included and required files as well. For example:
+          </p>
+          <code>&lt;?php $a = 1;</code>
+          <p>
+            Here the $a variable will be available within the included b.inc
+            script. However, within user-defined functions a local function
+            scope is introduced. Any variable used inside a function is by
+            default limited to the local function scope. For example:
+          </p>
+          <code>&lt;?php $a = 1;</code>
+        </article>
+      </section>
+
+      <section class="main-section" id="Variable_Variables">
+        <header>Variable Variables</header>
+        <article>
+          <p>
+            A variable variable takes the value of a variable and treats that as
+            the name of a variable. In the above example, hello, can be used as
+            the name of a variable by using two dollar signs. i.e.
+          </p>
+          <code>&lt;?php $$a = "hello";</code>
+          <p>
+            At this point two variables have been defined and stored in the PHP
+            symbol tree: $a with contents "hello" and $hello with contents
+            "world". Therefore, this statement:
+          </p>
+          <code>&lt;?php echo "$a ${$a}";</code>
+        </article>
+      </section>
+
+      <section class="main-section" id="Variable_From_External_Sources">
+        <header>Variable From External Sources</header>
+        <article>
+          <p>
+            When a form is submitted to a PHP script, the information from that
+            form is automatically made available to the script. There are few
+            ways to access this information, for example:
+          </p>
+          <ul>
+            <li>Example #1 A simple HTML form</li>
+            <li>Example #2 Accessing data from a simple POST HTML form</li>
+            <li>Example #3 More complex form variables</li>
+            <li>Example #4</li>
+            <li>Example #5</li>
+          </ul>
+        </article>
+      </section>
+    </main>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>

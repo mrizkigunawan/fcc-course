@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FCC Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="background-image">
+      <div class="background-color"></div>
+      <main class="content-wrapper">
+        <h1 id="title" class="heading">Mid Semester Survey</h1>
+        <p id="description" class="heading-desc">
+          <em>Thank you for taking time to help us improve the platform</em>
+        </p>
+
+        <div class="form-wrapper">
+          <form action="GET" id="survey-form">
+            <div class="form-group">
+              <label for="name" id="name-label" class="form-label">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="form-control"
+                placeholder="Enter your name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="email" id="email-label" class="form-label"
+                >Email</label
+              >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form-control"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="number" id="number-label" class="form-label"
+                >Age</label
+              >
+              <input
+                type="number"
+                id="number"
+                name="age"
+                class="form-control"
+                min="10"
+                max="50"
+                placeholder="Enter your age"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="role" id="select-label" class="form-label"
+                >Role</label
+              >
+              <select name="role" id="dropdown" class="form-control" required>
+                <option value="" disabled selected>Select your option</option>
+                <option>front-end</option>
+                <option>back-end</option>
+                <option>fullstack</option>
+                <option>devops</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Reccomend Site</label>
+              <label class="label-radio">
+                <input type="radio" name="reccomend" value="yes" /> Of Course
+                Yes
+              </label>
+              <label class="label-radio">
+                <input type="radio" name="reccomend" value="fifty" /> Not Really
+              </label>
+              <label class="label-radio">
+                <input type="radio" name="reccomend" value="no" /> Absolutely No
+              </label>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Favorite Subjects</label>
+              <label class="label-checkbox">
+                <input type="checkbox" name="subject" value="cloud computing" />
+                Cloud Computing
+              </label>
+              <label class="label-checkbox">
+                <input type="checkbox" name="subject" value="database design" />
+                Database Design
+              </label>
+              <label class="label-checkbox">
+                <input type="checkbox" name="subject" value="ux design" /> UX
+                Design
+              </label>
+              <label class="label-checkbox">
+                <input type="checkbox" name="subject" value="calculus" />
+                Calculus
+              </label>
+            </div>
+            <div class="form-group">
+              <label for="advice" id="advice" class="form-label"
+                >Any Advice to Improve Study System</label
+              >
+              <textarea
+                name="advice"
+                id="advice"
+                class="form-control"
+              ></textarea>
+            </div>
+            <button id="submit" type="submit" class="btn">Submit</button>
+          </form>
+        </div>
+      </main>
+    </div>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>

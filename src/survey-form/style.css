@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.background-image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  background-image: url("https://images.unsplash.com/photo-1627440765112-680c1633c4ae?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1502&q=80");
+}
+
+.background-color {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(81, 45, 109, 0.85);
+}
+
+.content-wrapper {
+  position: relative;
+  padding-top: 2em;
+}
+
+.heading,
+.heading-desc {
+  text-align: center;
+  color: #ffffff;
+  margin: 4px auto;
+  text-shadow: 2px 2px 3px #333;
+}
+
+.heading {
+  font-size: 2em;
+  margin-bottom: 0px;
+}
+
+.form-wrapper {
+  width: 100%;
+  margin-top: 2em;
+  padding: 2em;
+  border-radius: 1.5em;
+  background: rgba(81, 45, 109, 0.8);
+}
+
+.form-group {
+  margin-bottom: 1.2em;
+}
+
+.form-label {
+  display: block;
+  font-size: 1.1em;
+  color: #ffffff;
+  margin-bottom: 0.3em;
+}
+
+.label-radio,
+.label-checkbox {
+  display: block;
+  color: #ffffff;
+  margin-bottom: 0.3em;
+}
+
+.form-control {
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 0.8em;
+  border-radius: 5px;
+  font-size: 1em;
+  color: #333;
+  transition: 150ms ease-out;
+}
+
+.form-control:focus {
+  outline: 3px solid rgb(117, 69, 153);
+  outline-offset: 2px;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 16px;
+  border-radius: 10px;
+  background: #f8485e;
+  font-size: 1.1em;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #ff576a;
+}
+
+.btn:active {
+  background: #f13e53;
+}
+
+@media (min-width: 768px) {
+  .content-wrapper {
+    position: relative;
+    padding: 2em 0em;
+  }
+
+  .form-wrapper {
+    width: 100%;
+    max-width: 600px;
+    margin: 2em auto;
+  }
+}

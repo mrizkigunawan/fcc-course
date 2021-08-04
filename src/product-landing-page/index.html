@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FCC Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header id="header">
+      <div>
+        <picture>
+          <img
+            src="https://free3dicon.com/wp-content/uploads/2021/03/play_perspective_matte_s-1-300x300.png"
+            alt="brand logo"
+            id="header-img"
+          />
+        </picture>
+        <span class="brand-text">FCC Studio</span>
+      </div>
+
+      <nav id="nav-bar">
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#howitworks" class="nav-link">How It Works</a>
+        <a href="#pricing" class="nav-link">Pricing</a>
+      </nav>
+    </header>
+
+    <main>
+      <!--  email -->
+      <section class="section-one">
+        <div class="container hero">
+          <div class="title-wrapper">
+            <h1 class="title">Free Full Service Streaming</h1>
+            <p class="title-description">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Reprehenderit accusamus expedita minima voluptates laborum
+              nesciunt labore saepe tempora necessitatibus.
+            </p>
+            <form action="https://www.freecodecamp.com/email-submit" id="form">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="input-email"
+                placeholder="Enter Your Email Address"
+                required
+              />
+              <input
+                type="submit"
+                value="get started"
+                id="submit"
+                class="btn-submit"
+              />
+            </form>
+          </div>
+
+          <picture class="img-wrapper">
+            <img
+              src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/2d406c101084519.5f170c2bc293d.png"
+              alt="hero image"
+            />
+          </picture>
+        </div>
+      </section>
+
+      <!--  features -->
+      <section class="section-two" id="features">
+        <div class="container grid">
+          <div class="feature">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm3 2h6v4H7V5zm8 8v2h1v-2h-1zm-2-2H7v4h6v-4zm2 0h1V9h-1v2zm1-4V5h-1v2h1zM5 5v2H4V5h1zm0 4H4v2h1V9zm-1 4h1v2H4v-2z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            <div class="feature-description">
+              <h3>1000+ Movies and Series</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit
+                quisquam, atque, neque pariatur.
+              </p>
+            </div>
+          </div>
+          <div class="feature">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M18 13V5a2 2 0 00-2-2H4a2 2 0 00-2 2v8a2 2 0 002 2h3l3 3 3-3h3a2 2 0 002-2zM5 7a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1zm1 3a1 1 0 100 2h3a1 1 0 100-2H6z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            <div class="feature-description">
+              <h3>20+ Available Captions</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit
+                quisquam, atque, neque pariatur.
+              </p>
+            </div>
+          </div>
+          <div class="feature">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5 2a2 2 0 00-2 2v14l3.5-2 3.5 2 3.5-2 3.5 2V4a2 2 0 00-2-2H5zm2.5 3a1.5 1.5 0 100 3 1.5 1.5 0 000-3zm6.207.293a1 1 0 00-1.414 0l-6 6a1 1 0 101.414 1.414l6-6a1 1 0 000-1.414zM12.5 10a1.5 1.5 0 100 3 1.5 1.5 0 000-3z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            <div class="feature-description">
+              <h3>Free Trial 5 Months</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit
+                quisquam, atque, neque pariatur.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--  video -->
+      <section class="section-three container" id="howitworks">
+        <iframe
+          id="video"
+          width="500"
+          src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+      </section>
+
+      <!--  pricing -->
+      <section class="section-four" id="pricing">
+        <div class="container grid">
+          <div class="card">
+            <div class="card-title">
+              <span>Free Plan</span>
+            </div>
+            <div class="card-body">
+              <span class="price">$0</span>
+              <ul class="price-features">
+                <li>Lorem Ipsum</li>
+                <li>Lorem Ipsum</li>
+                <li>Lorem Ipsum</li>
+              </ul>
+              <a href="#" class="btn-price">select</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <span>Free Plan</span>
+            </div>
+            <div class="card-body">
+              <span class="price">$0</span>
+              <ul class="price-features">
+                <li>Lorem Ipsum</li>
+                <li>Lorem Ipsum</li>
+                <li>Lorem Ipsum</li>
+              </ul>
+              <a href="#" class="btn-price">select</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <span>Free Plan</span>
+            </div>
+            <div class="card-body">
+              <span class="price">$0</span>
+              <ul class="price-features">
+                <li>Lorem Ipsum</li>
+                <li>Lorem Ipsum</li>
+                <li>Lorem Ipsum</li>
+              </ul>
+              <a href="#" class="btn-price">select</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-nav">
+        <a href="#" class="footer-link">Privacy</a>
+        <a href="#" class="footer-link">Term</a>
+        <a href="#" class="footer-link">Contact</a>
+      </div>
+      <div class="copyright-text">Copyright 2021 FCC</div>
+    </footer>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
